@@ -2,7 +2,7 @@
 <html>
 <head>
 
-  <title>Movie DB</title>
+  <title>{% block title %}{% endblock %} | Movie DB</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 
@@ -11,7 +11,7 @@
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="row m-0 w-100">dark
       <div class="col-sm-3">
-        <div class="text-light h3 m-2 font-weight-bold">MovieDb</div>
+        <a href="/" style="text-decoration: none;"><div class="text-light h3 m-2 font-weight-bold">MovieDb</div></a>
       </div>
       <div class="col">
         <ul class="navbar-nav p-1 font-weight-bold">
