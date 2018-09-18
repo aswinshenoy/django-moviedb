@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Artist List</h1>
+<div class="row m-0">
+{% for artist in artists %}
+  <div class="col-md-4">
+    <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">{{artist.name}}</h4>
+          <a href="/artist/{{artist.id}}/" class="btn btn-primary">View</a>
+        </div>
+      </div>
+    </div>
+{% endfor %}
+</div>
+
+{% endblock %}
