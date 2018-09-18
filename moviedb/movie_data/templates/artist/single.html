@@ -5,4 +5,19 @@
 <h1>{{ artist.name }}</h1>
 <b>Imdb ID:</b> {{ artist.imdb_id }}
 
+<div class="py-2">
+  <h3 class="m-0">Movies</h3>
+  <div class="row m-0">
+  {% for movie in artist.roles_set.all %}
+    <div class="col-md-3 col-sm-6 p-2">
+      <div class="card p-2">
+        <h2 class="m-0"> {{movie.movie.title}} </h2>
+        <div class="font-weight-bold"> {{movie.role_name}} </div>
+        <a href="/movie/{{movie.movie.id}}/" class="btn btn-primary">View</a>
+      </div>
+    </div
+  {% endfor %}
+  </div>
+</div>
+
 {% endblock %}
