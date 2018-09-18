@@ -3,7 +3,8 @@
 {% block content %}
 
 <h1>{{ movie.title }}</h1>
-<b>Imdb ID:</b> {{ movie.imdb_id }}
+<div><b>Director:</b> {{ movie.director.name }}</div>
+<div><b>Imdb ID:</b> {{ movie.imdb_id }}</div>
 
 <div class="py-2">
   <h3 class="m-0">Artists</h3>
