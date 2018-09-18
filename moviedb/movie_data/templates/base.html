@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Movie DB</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="row m-0 w-100">dark
+      <div class="col-3">
+        <div class="text-light h3 m-2 font-weight-bold">MovieDb</div>
+      </div>
+      <div class="col">
+        <ul class="navbar-nav p-1 font-weight-bold">
+          <li class="nav-item">
+            <a class="nav-link" href="/movies/">Movies</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container p-2">
+  {% block content %}
+  {% endblock %}
+  </div>
+
+</body>
+</html>
